@@ -1,0 +1,41 @@
+collection --> table name
+documnet   --> field name
+show dbs -- > shows all dbs
+
+
+
+---------------mangodb in onecompiler-----------------
+show dbs
+show collections
+db.dropDatabase()
+
+db.users.insertOne({name: "Raji"})
+db.users.insertOne({Sname: "scarletwitch", spower: "darkmagic"})
+db.users.insertMany([{age:20}, {dpt: "IT"}, {age: 25}])
+
+db.users.find()
+
+db.users.updateOne({age: 20}, {$set:{age: 21}})
+
+db.users.deleteOne({age:25})
+
+db.users.find({name: {$ne: "Arun"}})
+
+db.users.find({age: {$gt: 12}})
+gt --> greater than, gte --> greater than or equal to , ls --> less than  
+
+db.users.updateOne({age: 20}, {$inc:{age: 21}})
+db.users.updateOne({ name: "Raji" }, { $rename: { age: "years" } })
+db.users.find()
+db.users.find().limit(2)
+db.users.find().skip(2)
+
+
+
+
+
+
+
+
+
+mongodb+srv://rajeshwarimughilan_db_user:scarletwitch@cluster0.bhlqpvi.mongodb.net/?appName=Cluster0
