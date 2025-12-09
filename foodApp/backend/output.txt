@@ -1,0 +1,41 @@
+POST http://localhost:5002/api/foods
+
+{"name":"MilkShake","price":80,"description":"Creamy","category":"Dairy"}
+
+{
+  "name": "MilkShake",
+  "price": 80,
+  "description": "Creamy",
+  "category": "Dairy",
+  "_id": "6937b2be110260645a1af0f2",
+  "createdAt": "2025-12-09T05:25:18.506Z",
+  "__v": 0
+}
+
+
+GET http://localhost:5002/api/foods/6937a973110260645a1af0e6
+
+{
+  "_id": "6937a973110260645a1af0e6",
+  "name": "Pizza",
+  "price": 10,
+  "description": "Delicious",
+  "category": "Italian",
+  "createdAt": "2025-12-09T04:45:39.422Z",
+  "__v": 0
+}
+
+
+PET http://localhost:5002/api/foods/6937a973110260645a1af0e6
+
+{"name":"MilkShake","price":80,"description":"Creamy","category":"Dairy-milk"}
+
+{
+  "_id": "6937a973110260645a1af0e6",
+  "name": "MilkShake",
+  "price": 80,
+  "description": "Creamy",
+  "category": "Dairy-milk",
+  "createdAt": "2025-12-09T04:45:39.422Z",
+  "__v": 0
+}
